@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
-
+using UnityEngine.UI;
 public class GameController : MonoBehaviour
 {
 	public GameObject hazard;
@@ -10,7 +10,7 @@ public class GameController : MonoBehaviour
 	public float startWait;
 	public float waveWait;
 	
-	public GUIText scoreText;
+	public Text scoreText;
 	private int score;
 	
 	void Start ()
@@ -44,6 +44,6 @@ public class GameController : MonoBehaviour
 	
 	void UpdateScore ()
 	{
-		//scoreText.text = "Score: " + score;
+		scoreText.text = "Score: " + score;
 	}
 }
